@@ -32,9 +32,6 @@ router.post('/login', async (req,res,next)=>{
         }else{
             return res.status(401).send("Invalid User");
         }
-       // redis.keys('User', function (err, keys) {
-       //     console.log(keys);
-       // })
     } catch (error) {
         next(error);
     }
