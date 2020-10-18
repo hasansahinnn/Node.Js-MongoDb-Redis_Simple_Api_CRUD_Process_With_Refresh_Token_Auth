@@ -17,6 +17,7 @@ const router=express.Router()
 // Read All
 router.get('/', async (req,res,next)=>{
     try {
+        console.log(req.user) //you can access user information from auth middleware
         const items=await users.find({});
         res.json(items);
     } catch (error) {
