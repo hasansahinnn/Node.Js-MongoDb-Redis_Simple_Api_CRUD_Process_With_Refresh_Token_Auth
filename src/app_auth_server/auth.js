@@ -5,7 +5,7 @@ const cors = require('cors');
 require('dotenv').config();
 const tokenauth = require('./api/auth_api');
 
-const app = express();  // Open console and Write "npm run Dev"
+const app = express();  // Open console and Write "npm run authServer"
 
 app.use(morgan('dev'));
 app.use(helmet());
