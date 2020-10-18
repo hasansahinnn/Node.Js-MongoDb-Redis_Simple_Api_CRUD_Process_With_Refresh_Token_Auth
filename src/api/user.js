@@ -5,11 +5,6 @@ const Joi = require('@hapi/joi')
 const db=monk(process.env.MONGO_URI)
 const users=db.get('users') // Get Collection
 
-const redisConnection = require('redis')
-const redis    = redisConnection.createClient({
-    port      : 18901,               // replace with your port
-    host      : process.env.REDIS_URI,        // replace with your hostanme or IP address
-    password  : process.env.REDIS_PW  })
 //Validate Control
 const schema=Joi.object({
     name: Joi.string().trim().required(),
