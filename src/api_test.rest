@@ -1,0 +1,24 @@
+### Get User
+GET http://localhost:4000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhjNmZhMDRmNzk5ZTVhY2U0YTUzYjMiLCJuYW1lIjoiaGFzYW4iLCJlbWFpbCI6Imhhc2FuQHNobmdyb3VwLm5ldCIsInBhc3N3b3JkIjoiMTIzIiwiaWF0IjoxNjAzMDU0MjM4LCJleHAiOjE2MDMwNTc4Mzh9.HT1eBv0u7M6NiUkvVVEk-L3d1Zx5UMBN8XKUxIuhkqs
+
+
+
+### Login
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+"email":"hasan@shngroup.net",
+"password":"123"
+}
+
+### Refresh Token
+
+POST http://localhost:5000/refreshToken
+Content-Type: application/json
+
+{
+"refreshtoken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhjNmZhMDRmNzk5ZTVhY2U0YTUzYjMiLCJuYW1lIjoiaGFzYW4iLCJlbWFpbCI6Imhhc2FuQHNobmdyb3VwLm5ldCIsInBhc3N3b3JkIjoiMTIzIiwiaWF0IjoxNjAzMDU0MDU2fQ.O4xtvqA70Wr2psqljVy6A6I_2n0IE4n1oygnNEdm5w8"
+}
